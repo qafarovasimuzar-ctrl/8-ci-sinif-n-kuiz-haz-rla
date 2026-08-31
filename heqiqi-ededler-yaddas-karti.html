@@ -1,28 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="az">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Həqiqi ədədlər | Yaddaş kartı</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Həqiqi ədədlər | İnteraktiv yaddaş kartları</title>
 <style>
-body{font-family:Arial,sans-serif;background:#f4f7fb;margin:0;padding:24px;color:#172033}.card{max-width:850px;margin:auto;background:white;border-radius:24px;padding:32px;box-shadow:0 10px 30px #0001}.tag{display:inline-block;background:#e8f0ff;padding:7px 12px;border-radius:20px;font-weight:bold;color:#2454a6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.box{border:1px solid #dde4ef;border-radius:16px;padding:18px}.box h2{margin-top:0;font-size:20px}.formula{font-size:24px;font-weight:bold;background:#f7f9fc;padding:12px;border-radius:10px;text-align:center}.tip{background:#fff7df;border-left:5px solid #e2a900;padding:14px;border-radius:8px}.example{background:#eef9f2;border-left:5px solid #35a66a;padding:14px;border-radius:8px}.small{font-size:14px;color:#596579}ul{line-height:1.7}h1{font-size:34px;margin:12px 0 8px}
-</style>
-</head>
-<body>
-<main class="card">
-<span class="tag">Riyaziyyat • 8-ci sinif</span>
-<h1>HƏQİQİ ƏDƏDLƏR</h1>
-<p>Yadda saxla: <b>həqiqi ədədlər</b> ədəd oxunda təsvir edilə bilən bütün ədədlərdir.</p>
-<div class="grid">
-<section class="box"><h2>1. Ədədlər çoxluğu</h2><ul><li><b>N</b> – natural ədədlər: 1, 2, 3, ...</li><li><b>Z</b> – tam ədədlər: ..., −2, −1, 0, 1, 2, ...</li><li><b>Q</b> – rasional ədədlər: a/b, b ≠ 0</li><li><b>I</b> – irrasional ədədlər: kəsr şəklində dəqiq ifadə olunmayan ədədlər</li><li><b>R</b> – həqiqi ədədlər: Q ∪ I</li></ul><div class="formula">N ⊂ Z ⊂ Q ⊂ R</div></section>
-<section class="box"><h2>2. Rasional ədəd</h2><p>İki tam ədədin nisbəti şəklində yazılır:</p><div class="formula">a/b, b ≠ 0</div><div class="example"><b>Nümunə:</b> 3/5, −7/2, 4 = 4/1</div><p>Onluq yazılışı sonlu və ya dövri sonsuz ola bilər.</p></section>
-<section class="box"><h2>3. İrrasional ədəd</h2><p>Dəqiq a/b formasında yazıla bilməyən həqiqi ədəddir.</p><div class="example"><b>Nümunə:</b> √2, √3, π</div><p>Onluq yazılışı sonsuz və dövri olmayan kəsrdir.</p></section>
-<section class="box"><h2>4. Ədəd oxu</h2><p>Hər həqiqi ədədə ədəd oxunda bir nöqtə, hər nöqtəyə isə bir həqiqi ədəd uyğun gəlir.</p><div class="formula">−2 &lt; −1 &lt; 0 &lt; 1 &lt; 2</div></section>
-<section class="box"><h2>5. Modul</h2><p>Ədədin sıfırdan məsafəsidir.</p><div class="formula">|a| ≥ 0</div><div class="example">|−5| = 5 &nbsp;&nbsp; |3| = 3 &nbsp;&nbsp; |0| = 0</div></section>
-<section class="box"><h2>6. Müqayisə qaydası</h2><p>Müsbət ədədlərdə ədəd oxunda sağda olan daha böyükdür. Mənfi ədədlərdə isə sıfıra yaxın olan daha böyükdür.</p><div class="example">−3 &lt; −1 və 2 &lt; 5</div></section>
-</div>
-<br><div class="tip"><b>🧠 Yaddaş ipucu:</b> “R = Rasional + İrrasional”. Rasionalda <b>nisbət</b> var, irrasionalda isə belə dəqiq kəsr forması yoxdur.</div>
-<br><p class="small">Mini yoxlama: √16 hansı çoxluqlara daxildir? 0,25 rasionaldırmı? −7/3 həqiqi ədəddirmi? Cavab: √16=4 → N, Z, Q, R; 0,25 → Q və R; −7/3 → Q və R.</p>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f4f7fb;color:#172033}.wrap{max-width:900px;margin:auto;padding:22px}.hero{padding:28px;border-radius:24px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;box-shadow:0 14px 35px #1e3a8a33}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;opacity:.92}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{padding:8px 13px;border-radius:99px;background:#ffffff22;border:1px solid #ffffff44}.card{margin-top:18px;min-height:370px;background:#fff;border-radius:24px;padding:34px;box-shadow:0 8px 28px #0000000d;display:flex;flex-direction:column;justify-content:center;text-align:center}.label{color:#2563eb;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.term{font-size:34px;font-weight:900;margin:18px 0}.answer{font-size:20px;line-height:1.6;max-width:720px;margin:auto}.formula{display:inline-block;margin:15px 0;padding:12px 18px;border-radius:12px;background:#eef2ff;font-size:22px;font-weight:800}.hidden{display:none}.controls{display:flex;justify-content:center;gap:10px;margin-top:18px}.btn{border:0;border-radius:12px;padding:12px 20px;font-weight:800;cursor:pointer;background:#2563eb;color:#fff}.btn.secondary{background:#e2e8f0;color:#172033}.progress{text-align:center;margin:14px;color:#64748b;font-weight:700}.hint{margin-top:18px;text-align:center;color:#64748b;font-size:14px}@media(max-width:600px){.wrap{padding:12px}.hero h1{font-size:25px}.card{padding:24px;min-height:410px}.term{font-size:27px}.answer{font-size:18px}.controls{flex-wrap:wrap}}
+</style></head>
+<body><main class="wrap">
+<section class="hero"><h1>🧮 Həqiqi ədədlər</h1><p>8-ci sinif üçün interaktiv yaddaş kartları</p><div class="meta"><span class="pill">📚 12 kart</span><span class="pill">🎯 Təkrar</span><span class="pill">⚡ Özünü yoxla</span></div></section>
+<div class="progress" id="progress">1 / 12</div>
+<section class="card"><div class="label">Yaddaş kartı</div><div class="term" id="term"></div><div id="answer" class="answer hidden"></div></section>
+<div class="controls"><button class="btn secondary" id="prev">← Əvvəlki</button><button class="btn" id="show">Cavabı göstər</button><button class="btn secondary" id="next">Növbəti →</button></div>
+<p class="hint">💡 Əvvəl cavabı özün düşün, sonra “Cavabı göstər” düyməsinə toxun. Klaviaturada ← → və Space də işləyir.</p>
 </main>
-</body>
-</html>
+<script>
+const cards=[
+['Həqiqi ədəd nədir?','Ədəd oxunda göstərilə bilən bütün ədədlərə həqiqi ədədlər deyilir. Buraya rasional və irrasional ədədlər daxildir.'],
+['Rasional ədədlər','İki tam ədədin nisbəti şəklində yazıla bilən ədədlərdir: a/b, b≠0. Məsələn: 3/4, −2, 0,5.'],
+['İrrasional ədədlər','Adi kəsr şəklində dəqiq yazıla bilməyən həqiqi ədədlərdir. Onların onluq yazılışı sonsuz və dövr etməyən kəsrdir. Məsələn: √2, √3, π.'],
+['Ədədlər çoxluğu','Natural N ⊂ Tam Z ⊂ Rasional Q ⊂ Həqiqi R. İrrasional ədədlər Q-dan kənarda, lakin R-in daxilindədir.'],
+['Ədəd oxu','Hər həqiqi ədədə ədəd oxunda bir nöqtə, hər nöqtəyə isə bir həqiqi ədəd uyğun gəlir. Sağda yerləşən ədəd daha böyükdür.'],
+['Müsbət, mənfi və sıfır','0-dan böyük ədədlər müsbət, 0-dan kiçik ədədlər mənfidir. 0 nə müsbət, nə də mənfidir.'],
+['Modul |a|','Ədədin sıfırdan məsafəsidir və həmişə mənfi olmayan qiymət alır. Məsələn: |−7|=7, |3|=3, |0|=0.'],
+['Kvadrat kök √a','a≥0 üçün √a kvadratı a-ya bərabər olan mənfi olmayan ədəddir. Məsələn: √49=7.'],
+['√a nə vaxt irrasionaldır?','a natural ədəd olub tam kvadrat deyilsə, √a irrasionaldır. Məsələn: √5 və √7 irrasionaldır, √16=4 isə rasionaldır.'],
+['Hansı böyükdür?','Ədəd oxunda sağda yerləşən ədəd daha böyükdür. Məsələn: −2<1 və 3,5<4. Mənfi ədədlərdə sıfıra yaxın olan daha böyükdür: −2>−5.'],
+['Yadda saxla!','Rasional = kəsr kimi yazılır. İrrasional = sonsuz, dövr etməyən onluq kəsr. Həqiqi = rasional + irrasional.'],
+['Mini yoxlama','√16, −3, 2/5 və √7 ədədlərindən hansı irrasionaldır? Cavab: √7. Çünki 7 tam kvadrat deyil.']
+];
+let i=0,shown=false;const term=document.getElementById('term'),answer=document.getElementById('answer'),progress=document.getElementById('progress'),show=document.getElementById('show');
+function render(){term.textContent=cards[i][0];answer.textContent=cards[i][1];answer.classList.toggle('hidden',!shown);progress.textContent=`${i+1} / ${cards.length}`;show.textContent=shown?'Cavabı gizlət':'Cavabı göstər'}
+show.onclick=()=>{shown=!shown;render()};document.getElementById('next').onclick=()=>{i=(i+1)%cards.length;shown=false;render()};document.getElementById('prev').onclick=()=>{i=(i-1+cards.length)%cards.length;shown=false;render()};document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')document.getElementById('next').click();if(e.key==='ArrowLeft')document.getElementById('prev').click();if(e.key===' '){e.preventDefault();show.click()}});render();
+</script></body></html>
